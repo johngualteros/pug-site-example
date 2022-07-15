@@ -1,0 +1,40 @@
+html 
+    head 
+        title Home
+        //- Import CSS
+        link(rel='stylesheet', href='/index.css')
+        link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
+    body
+        .container
+            header(data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="500"
+                    data-aos-delay="300")
+                h1 John
+                nav
+                    a(href='/') Home
+                    a(href='/about') About
+                    a(href='/contact') Contact
+                    button.button__header Sign up &rarr;
+            
+            h1.title(data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="500"
+                    data-aos-delay="300") Welcome to my website
+            p.description(data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="500"
+                    data-aos-delay="320") this is my example using the templates with pug later  
+            p.description(data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="500"
+                    data-aos-delay="320") I will make more examples with node
+
+            button.button__contact(href="mailto:gualterosjohn40@gmail.com" 
+                                    data-aos="fade-right"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="500"
+                                    data-aos-delay="340") Contact Me
+        //- Scripts -//
+        script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+        script(src='/index.js')
